@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: tongyi-example
+
+  cloud:
+    ai:
+      tongyi:
+        api-key: sk-6ac27bc68acf466481d915e5c0d27119

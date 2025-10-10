@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ASMIdeaPluginConfiguration">
+    <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/2.多线程下载/down-bit-master/down-bit-master/pom.xml" />
+        <option value="$PROJECT_DIR$/6.java异步导入/导入导出/millions-demo/millions-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/7.java异步导出/millions-demo/millions-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/81 api健康安全/api-health/api-health/pom.xml" />
+        <option value="$PROJECT_DIR$/82 巧用责任链模式/zerenlian/pom.xml" />
+        <option value="$PROJECT_DIR$/12-17.手写线程池/手写线程池/pom.xml" />
+        <option value="$PROJECT_DIR$/76 常见的五种加密算法/pom.xml" />
+        <option value="$PROJECT_DIR$/3.多线程异步记录操作日志/demo-operationlog-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/61 多线程工具类通用实现/多线程工具类通用实现/pom.xml" />
+        <option value="$PROJECT_DIR$/4.模拟压测 高并发压测实战/moniyace/pom.xml" />
+        <option value="$PROJECT_DIR$/89 如何防止接口重复提交？/spring-boot-example-request/pom.xml" />
+        <option value="$PROJECT_DIR$/24. 导出下载进度条简单实现/导出下载进度条/pom.xml" />
+        <option value="$PROJECT_DIR$/62 关于线程池的一个生产问题/threadpooldemoquestion/pom.xml" />
+        <option value="$PROJECT_DIR$/43 数据如何优雅的实现脱敏？实战/sensitivedata/pom.xml" />
+        <option value="$PROJECT_DIR$/75 feign的远程调用重试功能/tlog-example-logback-feign-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/75 feign的远程调用重试功能/tlog-example-logback-feign-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/90 实战JWT搞定跨站点统一登录/spring-boot-example-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/40 实战！如何实现多租户数据隔离？/multi_tenant_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/20【生产事故】多线程性能优化最大的坑/spring-boot-asyncbatch-productquestion/pom.xml" />
+        <option value="$PROJECT_DIR$/27.简洁精妙的状态机设计与核心代码实现/pom.xml" />
+        <option value="$PROJECT_DIR$/66 生产问题 关于线程池的一个生产问题/learnFromBug-master/learnFromBug-master/pom.xml" />
+        <option value="$PROJECT_DIR$/64 实战!基于csv文件获取手机号归属地/phone-to-region-main/pom.xml" />
+        <option value="$PROJECT_DIR$/46 tika轻松实现各种文档内容解析和校验/tikademo/pom.xml" />
+        <option value="$PROJECT_DIR$/73 springboot如何实现接口的安全/safespringboot/pom.xml" />
+        <option value="$PROJECT_DIR$/86 实战！如何处理 MQ 消费失败的消息？/spring-boot-example-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/88 实战!用一个注解实现分批处理合并结果！/spring-boot-example-hebing/pom.xml" />
+        <option value="$PROJECT_DIR$/5.java并发查询数据实战 提高接口响应速度/concurrentThreadSelect/concurrentThreadSelect/pom.xml" />
+        <option value="$PROJECT_DIR$/69 带你手写一个优雅通用的树形结构生成工具类/treeutil/pom.xml" />
+        <option value="$PROJECT_DIR$/72 springboot实现异步线程数据传递/SpringBootYiBuThreadTransport/pom.xml" />
+        <option value="$PROJECT_DIR$/74 关于scheduled注解的一个生产问题/scheduled/pom.xml" />
+        <option value="$PROJECT_DIR$/93 Redis+Lua整合，实现订单转手功能/spring-boot-example-lua/pom.xml" />
+        <option value="$PROJECT_DIR$/44 业务项目中如何主动感知mysql是否存活？/springboot-db-check-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/55 实战！SpringBoot实现日志链路追踪/logtrace/pom.xml" />
+        <option value="$PROJECT_DIR$/56 springboot启动时自动初始化数据库/initite/pom.xml" />
+        <option value="$PROJECT_DIR$/57 用责任链模式来优化参数多重校验，非常优雅！/zerenlian/pom.xml" />
+        <option value="$PROJECT_DIR$/71 实战!springboot如何实现异步编程/pom.xml" />
+        <option value="$PROJECT_DIR$/80 如何在springboot中实现快速加解密/spring-boot-example-demo-master/spring-boot-woniu-shardingsphere/pom.xml" />
+        <option value="$PROJECT_DIR$/85 整合 jackson 轻松搞定接口数据脱敏/spring-boot-example-sensitive/pom.xml" />
+        <option value="$PROJECT_DIR$/53 实战！websocket实现在线聊天室功能！/spring-boot-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/9-11.接口请求批量调用结合多线程 优化系统性能/spring-boot-asyncbatch-v1.0.5/pom.xml" />
+        <option value="$PROJECT_DIR$/91 SpringBoot实现一个商品库存预警系统/spring-boot-example-alert/pom.xml" />
+        <option value="$PROJECT_DIR$/28 SpringBoot实现超大文件上传的通用方案/file-upload/pom.xml" />
+        <option value="$PROJECT_DIR$/41 实战! mybatis拦截器实现动态SQL更新/dynamicsql/pom.xml" />
+        <option value="$PROJECT_DIR$/70 用java 8的函数式接口和泛型 优化策略模式/pom.xml" />
+        <option value="$PROJECT_DIR$/78 Redisson结合自定义注解解决重复提交问题/redisnotrepeat/pom.xml" />
+        <option value="$PROJECT_DIR$/45 如何手写一个代码生成器？生成最基础的CRUD功能/generatecode/pom.xml" />
+        <option value="$PROJECT_DIR$/54 实战！实现一个动态线程池以及线程池监控告警功能！/dynamic-thread-pool/pom.xml" />
+        <option value="$PROJECT_DIR$/58 实战！ThreadLocal在工作中是怎么使用的/threadlocaldemo/pom.xml" />
+        <option value="$PROJECT_DIR$/84 纵向越权如何实现？手把手带你开发一套用户权限系统/spring-boot-example-menu/pom.xml" />
+        <option value="$PROJECT_DIR$/67 68 实现一个线程安全的本地缓存和自定义一个重试框架/自定义重试框架和线程安全的本地缓存/learnFromBug-master/pom.xml" />
+        <option value="$PROJECT_DIR$/77 springai和通义千问快速集成java ai应用/spring-cloud-ai-example/pom.xml" />
+        <option value="$PROJECT_DIR$/19.SpringBoot整合定时调度线程池实现动态定时任务/pom.xml" />
+        <option value="$PROJECT_DIR$/32 万能通用的异步实战方案 涉及多线程 mq 数据库的整合/woniu-async-master/pom.xml" />
+        <option value="$PROJECT_DIR$/51 springboot整合activiti工作流发起流程/Activiti7demo/pom.xml" />
+        <option value="$PROJECT_DIR$/60 多功能条件查询接口实战！实现模糊分页排序以及多条件查询/通用条件查询/woniu-web-master/pom.xml" />
+        <option value="$PROJECT_DIR$/94 SpringBoot使用TraceId实现日志链路追踪/spring-boot-example-lianluzhuizong/pom.xml" />
+        <option value="$PROJECT_DIR$/21.SpringBoot整合Quartz实现定时任务动态配置/pom.xml" />
+        <option value="$PROJECT_DIR$/22.SpringBoot整合规则引擎liteflow业务实战/pom.xml" />
+        <option value="$PROJECT_DIR$/35 aop与自定义注解整合springjdbc 实现多数据源/dynamic_datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/37 shardingjdbc实现多数据源，实现复杂的分库分表/ShardingDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/63 获取归属地实战!SpringBoot通过手机号获取归属地/phone-to-region-main/pom.xml" />
+        <option value="$PROJECT_DIR$/65 责任链 + 工厂 + 模板方法 + 享元模式结合业务实践/phone-to-region-main/phone-to-region-main/pom.xml" />
+        <option value="$PROJECT_DIR$/8.多线程实战 统计业务数据中的异常数据，统计异常的数量并告警/exceptiondata/pom.xml" />
+        <option value="$PROJECT_DIR$/23 使用Nacos实现动态线程池，用xxlJob监控动态线程池/dynamicThreadPool/pom.xml" />
+        <option value="$PROJECT_DIR$/38 SpringBoot Starter，自定义全局加解密组件/encrydemo/encry-woniu-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/87 如何在 Spring Boot 中快速实现数据的加解密功能/spring-boot-example-demo-master/pom.xml" />
+        <option value="$PROJECT_DIR$/49 自定义注解添加自定义转换器 让aop异步记录操作日志变得通用/demo-operationlog-springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/52 实战！过滤器结合装饰模式，改变请求参数，去除请求参数前后空格/trim-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/26.聊一聊CompletionService如何优雅地处理异步任务/pom.xml" />
+        <option value="$PROJECT_DIR$/33 优雅封装RabbitMQ 实现动态队列、动态生产者，动态消费者绑定/pom.xml" />
+        <option value="$PROJECT_DIR$/39 如何从零开始实现一个场景启动器 springboot starter/starterdemo/woniu-starter-test/pom.xml" />
+        <option value="$PROJECT_DIR$/39 如何从零开始实现一个场景启动器 springboot starter/starterdemo/hello-woniu-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/25.动态更改Spring定时任务Cron表达式的优雅方案 实现动态定时任务/动态更改Spring定时任务Cron表达式的优雅方案 实现动态定时任务/pom.xml" />
+        <option value="$PROJECT_DIR$/29. xxlJob分布式任务调度通用业务实战 分布式加多线程 批量处理任务/xxljobgeneralpractice/pom.xml" />
+        <option value="$PROJECT_DIR$/42 MybatisPlus实现多租户 通过表字段（租户ID）进行数据逻辑隔离/pom.xml" />
+        <option value="$PROJECT_DIR$/18.定时调度线程池ThreadPoolTaskScheduler，玩转定时任务/schedule_task-main/pom.xml" />
+        <option value="$PROJECT_DIR$/34 Spring集成多个MyBatis框架 实现多数据源 并且实现多数据源事务/dynamicdatasource/pom.xml" />
+        <option value="$PROJECT_DIR$/83 RabbitMQ实现业务异步执行,可靠生产和可靠消费保证分布式事务的一致性/spring-boot-example-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/47 实战!SpringBoot整合RabbitMQ和Redis实现一个秒杀系统！/seckill-master/pom.xml" />
+        <option value="$PROJECT_DIR$/92 SpringBoot整合Logback，实现敏感信息日志脱敏并且异步高效写入/spring-boot-example-log/pom.xml" />
+        <option value="$PROJECT_DIR$/48 实战！从spring源码学到的优化冗余代码的一种方案，消除代码中的if else/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/36 dynamicdatasource多数源组件实现多数据源，动态添加切换数据源，实现多数据源事务/dynamicdatasource3/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

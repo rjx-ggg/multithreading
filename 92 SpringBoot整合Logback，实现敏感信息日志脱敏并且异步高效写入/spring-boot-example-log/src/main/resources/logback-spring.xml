@@ -1,0 +1,10 @@
+<configuration>
+    <!-- 自定义Appender配置 -->
+    <appender name="SENSITIVE_MASKING_APPENDER" class="com.example.logging.SensitiveDataMaskingAppender">
+    </appender>
+
+    <!-- 根Logger配置 -->
+    <root level="info">
+        <appender-ref ref="SENSITIVE_MASKING_APPENDER"/>
+    </root>
+</configuration>

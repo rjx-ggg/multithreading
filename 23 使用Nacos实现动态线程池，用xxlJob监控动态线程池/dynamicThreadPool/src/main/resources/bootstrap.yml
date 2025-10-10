@@ -1,0 +1,48 @@
+server:
+  port: 8010
+  # 应用名称（nacos会将该名称当做服务名称）
+spring:
+  application:
+    name: woniu-service
+  cloud:
+    nacos:
+      discovery:
+        namespace: public
+        server-addr: 127.0.0.1:8848
+      config:
+        namespace: public
+        server-addr: 127.0.0.1:8848
+        file-extension: properties
+        shared-configs:
+          - data-id: dynamic-thread-pool-dev.properties
+            refresh: true
+
+#  mail:
+#    # 下面这个是QQ邮箱host ， 企业邮箱 : smtp.exmail.qq.com
+#    host: smtp.qq.com
+#    # tencent mail port  这个是固定的
+#    port: 465
+#    # 你的QQ邮箱
+#    username: 1003271829@qq.com
+#    # 进入邮箱配置后得到的授权码
+#    password: xxxxxxxxx
+#    test-connection: true
+#    properties:
+#      mail:
+#        smtp:
+#          ssl:
+#            enable: true
+
+
+xxl:
+  job:
+    admin:
+      addresses: http://localhost:9420/xxl-job-admin/
+    accessToken: default_token
+    executor:
+      appname: dynamic-threadpool-executor
+      ip: localhost
+      port: 9430
+      address:
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: 7

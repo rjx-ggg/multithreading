@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="schedule_task (3)" />
+        <module name="spring-boot-example-rabbitmq (2)" />
+        <module name="woniu-web (2)" />
+        <module name="demo (5) (com.example)" />
+        <module name="dynamic_datasource" />
+        <module name="woniu-springboot-interface-demo (2)" />
+        <module name="threadconnectiondemo (8)" />
+        <module name="dynamic_mybatis" />
+        <module name="spring-boot-example-jwt (2)" />
+        <module name="dynamic-thread-pool" />
+        <module name="dynamicsql (4)" />
+        <module name="PhoneToRegion (7)" />
+        <module name="demo (4)" />
+        <module name="spring-boot-example-jwt (6)" />
+        <module name="PhoneToRegion (3)" />
+        <module name="ExportExcelData (2)" />
+        <module name="woniuaysnc" />
+        <module name="threadconnectiondemo (4)" />
+        <module name="down-bit" />
+        <module name="spring-boot-example-rabbitmq (1)" />
+        <module name="woniu-springboot-interface-demo (5)" />
+        <module name="schedule_task (4)" />
+        <module name="spring-boot-example-shardingsphere (2)" />
+        <module name="woniu-web (3)" />
+        <module name="woniu-springboot-interface-demo (1)" />
+        <module name="zerenliandemo" />
+        <module name="encry-woniu-spring-boot-starter" />
+        <module name="threadconnectiondemo (5)" />
+        <module name="dynamicsql (3)" />
+        <module name="demo (3)" />
+        <module name="spring-boot-example-jwt (3)" />
+        <module name="PhoneToRegion (4)" />
+        <module name="threadconnectiondemo (1)" />
+        <module name="spring-boot-example-jwt (7)" />
+        <module name="woniu-springboot-interface-demo (4)" />
+        <module name="tlog-example-logback-feign-consumer" />
+        <module name="schedule_task (1)" />
+        <module name="spring-boot-example-shardingsphere (1)" />
+        <module name="seckill" />
+        <module name="millions-demo (1)" />
+        <module name="sql-init-demo" />
+        <module name="spring-boot-example-sensitive" />
+        <module name="trim-filter" />
+        <module name="springboot-db-check-demo" />
+        <module name="threadconnectiondemo (6)" />
+        <module name="demo (2)" />
+        <module name="spring-boot-example-menu" />
+        <module name="spring-cloud-ai-example" />
+        <module name="hello-woniu-spring-boot-starter" />
+        <module name="asynccode" />
+        <module name="dynamicsql (2)" />
+        <module name="import-export-millions" />
+        <module name="PhoneToRegion (5)" />
+        <module name="vip-file-upload" />
+        <module name="spring-boot-example-jwt (4)" />
+        <module name="PhoneToRegion (1)" />
+        <module name="threadconnectiondemo (2)" />
+        <module name="tlog-example-logback-feign-provider" />
+        <module name="Sharding" />
+        <module name="woniu-starter-test" />
+        <module name="multi_tenant_datasource" />
+        <module name="schedule_task (2)" />
+        <module name="millions-demo (2)" />
+        <module name="threadPoolExecutor" />
+        <module name="woniu-web (1)" />
+        <module name="celuemoshijingjian" />
+        <module name="woniu-springboot-interface-demo (3)" />
+        <module name="threadconnectiondemo (7)" />
+        <module name="spring-boot-example-jwt (1)" />
+        <module name="demo (1) (com.woniu)" />
+        <module name="SpringBoot2-Activiti7" />
+        <module name="dynamicsql (1)" />
+        <module name="spring-boot-example-jwt (5)" />
+        <module name="PhoneToRegion (6)" />
+        <module name="dynamic_datasource_framework" />
+        <module name="ExportExcelData (1)" />
+        <module name="PhoneToRegion (2)" />
+        <module name="spring-boot-websocket" />
+        <module name="threadconnectiondemo (3)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="demo (1)" target="1.8" />
+      <module name="demo (1) (org.example)" target="1.8" />
+      <module name="demo (2) (com.example)" target="1.8" />
+      <module name="demo (3) (com.example)" target="1.8" />
+      <module name="demo (4) (com.example)" target="1.8" />
+      <module name="dynamicsql" target="1.8" />
+      <module name="ExportExcelData" target="1.8" />
+      <module name="millions-demo" target="1.8" />
+      <module name="PhoneToRegion" target="1.8" />
+      <module name="schedule_task" target="1.8" />
+      <module name="spring-boot-asyncbatch-v1.0.5" target="1.8" />
+      <module name="spring-boot-example-jwt" target="1.8" />
+      <module name="spring-boot-example-rabbitmq" target="1.8" />
+      <module name="spring-boot-example-shardingsphere" target="1.8" />
+      <module name="threadconnectiondemo" target="1.8" />
+      <module name="woniu-springboot-interface-demo" target="1.8" />
+      <module name="woniu-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ExportExcelData (1)" options="-parameters" />
+      <module name="ExportExcelData (2)" options="-parameters" />
+      <module name="SpringBoot2-Activiti7" options="-parameters" />
+      <module name="demo (1) (com.woniu)" options="-parameters" />
+      <module name="demo (4) (com.example)" options="-parameters" />
+      <module name="demo (5) (com.example)" options="-parameters" />
+      <module name="dynamic-thread-pool" options="-parameters" />
+      <module name="dynamic_datasource" options="-parameters" />
+      <module name="dynamic_datasource_framework" options="-parameters" />
+      <module name="dynamic_mybatis" options="-parameters" />
+      <module name="dynamicsql (1)" options="-parameters" />
+      <module name="dynamicsql (2)" options="-parameters" />
+      <module name="dynamicsql (3)" options="-parameters" />
+      <module name="dynamicsql (4)" options="-parameters" />
+      <module name="encry-woniu-spring-boot-starter" options="-parameters" />
+      <module name="multi_tenant_datasource" options="-parameters" />
+      <module name="schedule_task (1)" options="-parameters" />
+      <module name="schedule_task (2)" options="-parameters" />
+      <module name="schedule_task (3)" options="-parameters" />
+      <module name="schedule_task (4)" options="-parameters" />
+      <module name="seckill" options="-parameters" />
+      <module name="spring-boot-example-jwt (1)" options="-parameters" />
+      <module name="spring-boot-example-jwt (2)" options="-parameters" />
+      <module name="spring-boot-example-jwt (3)" options="-parameters" />
+      <module name="spring-boot-example-jwt (4)" options="-parameters" />
+      <module name="spring-boot-example-jwt (5)" options="-parameters" />
+      <module name="spring-boot-example-jwt (6)" options="-parameters" />
+      <module name="spring-boot-example-jwt (7)" options="-parameters" />
+      <module name="spring-boot-example-menu" options="-parameters" />
+      <module name="spring-boot-example-rabbitmq" options="-parameters" />
+      <module name="spring-boot-example-rabbitmq (1)" options="-parameters" />
+      <module name="spring-boot-example-rabbitmq (2)" options="-parameters" />
+      <module name="spring-boot-example-sensitive" options="-parameters" />
+      <module name="spring-boot-example-shardingsphere" options="-parameters" />
+      <module name="spring-boot-example-shardingsphere (1)" options="-parameters" />
+      <module name="spring-boot-example-shardingsphere (2)" options="-parameters" />
+      <module name="spring-boot-websocket" options="-parameters" />
+      <module name="springboot-db-check-demo" options="-parameters" />
+      <module name="sql-init-demo" options="-parameters" />
+      <module name="threadconnectiondemo (1)" options="-parameters" />
+      <module name="threadconnectiondemo (2)" options="-parameters" />
+      <module name="threadconnectiondemo (3)" options="-parameters" />
+      <module name="threadconnectiondemo (4)" options="-parameters" />
+      <module name="threadconnectiondemo (5)" options="-parameters" />
+      <module name="threadconnectiondemo (6)" options="-parameters" />
+      <module name="threadconnectiondemo (7)" options="-parameters" />
+      <module name="threadconnectiondemo (8)" options="-parameters" />
+      <module name="trim-filter" options="-parameters" />
+      <module name="vip-file-upload" options="-parameters" />
+      <module name="woniu-springboot-interface-demo (1)" options="-parameters" />
+      <module name="woniu-springboot-interface-demo (2)" options="-parameters" />
+      <module name="woniu-springboot-interface-demo (3)" options="-parameters" />
+      <module name="woniu-springboot-interface-demo (4)" options="-parameters" />
+      <module name="woniu-springboot-interface-demo (5)" options="-parameters" />
+      <module name="woniu-starter-test" options="-parameters" />
+      <module name="woniu-web (1)" options="-parameters" />
+      <module name="woniu-web (2)" options="-parameters" />
+      <module name="woniu-web (3)" options="-parameters" />
+      <module name="woniuaysnc" options="-parameters" />
+    </option>
+  </component>
+</project>

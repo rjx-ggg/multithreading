@@ -1,0 +1,16 @@
+CREATE TABLE `datasource` (
+`ds_id` INT NOT NULL,
+`tenant_id` VARCHAR(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '租户id',
+`ds_code` VARCHAR(255) DEFAULT NULL COMMENT '数据源标识',
+`jdbc_url` VARCHAR(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据库url',
+`username` VARCHAR(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据库名称',
+`password` VARCHAR(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '数据库密码',
+PRIMARY KEY (`ds_id`)
+) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+CREATE TABLE `t_user` (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `name` varchar(16) DEFAULT '' COMMENT '名字',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3 COMMENT='t_user'

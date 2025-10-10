@@ -1,0 +1,22 @@
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ds1database?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF8&useSSL=false
+    username: root
+    password: 123456
+
+#多租户配置
+tenant:
+  enable: true
+  column: tenant_id
+  filterTables:
+  ignoreTables:
+    - sys_app
+  ignoreLoginNames:
+

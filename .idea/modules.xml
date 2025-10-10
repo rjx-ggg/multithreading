@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/54 实战！实现一个动态线程池以及线程池监控告警功能！/dynamic-thread-pool/dynamic-thread-pool.iml" filepath="$PROJECT_DIR$/54 实战！实现一个动态线程池以及线程池监控告警功能！/dynamic-thread-pool/dynamic-thread-pool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/35 aop与自定义注解整合springjdbc 实现多数据源/dynamic_datasource/dynamic_datasource.iml" filepath="$PROJECT_DIR$/35 aop与自定义注解整合springjdbc 实现多数据源/dynamic_datasource/dynamic_datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/36 dynamicdatasource多数源组件实现多数据源，动态添加切换数据源，实现多数据源事务/dynamicdatasource3/dynamic_datasource_framework.iml" filepath="$PROJECT_DIR$/36 dynamicdatasource多数源组件实现多数据源，动态添加切换数据源，实现多数据源事务/dynamicdatasource3/dynamic_datasource_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/34 Spring集成多个MyBatis框架 实现多数据源 并且实现多数据源事务/dynamicdatasource/dynamic_mybatis.iml" filepath="$PROJECT_DIR$/34 Spring集成多个MyBatis框架 实现多数据源 并且实现多数据源事务/dynamicdatasource/dynamic_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/multithread.iml" filepath="$PROJECT_DIR$/.idea/multithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/75 feign的远程调用重试功能/tlog-example-logback-feign-consumer/tlog-example-logback-feign-consumer.iml" filepath="$PROJECT_DIR$/75 feign的远程调用重试功能/tlog-example-logback-feign-consumer/tlog-example-logback-feign-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/75 feign的远程调用重试功能/tlog-example-logback-feign-provider/tlog-example-logback-feign-provider.iml" filepath="$PROJECT_DIR$/75 feign的远程调用重试功能/tlog-example-logback-feign-provider/tlog-example-logback-feign-provider.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: woniu-service
+
+  profiles:
+    active: dev
+  redis:
+    host: 192.168.56.10
+    password: 123456

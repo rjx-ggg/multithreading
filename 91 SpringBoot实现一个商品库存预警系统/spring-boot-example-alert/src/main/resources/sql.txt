@@ -1,0 +1,39 @@
+CREATE DATABASE IF NOT EXISTS inventory_db;
+
+USE inventory_db;
+
+-- 商品库存表
+CREATE TABLE product_stock (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(255) NOT NULL,
+    stock_quantity INT NOT NULL,
+    threshold INT NOT NULL DEFAULT 10-- 库存预警阈值
+);
+
+-- 插入一些测试数据
+INSERT INTO product_stock (product_name, stock_quantity, threshold)
+VALUES ('Product A', 15, 10),
+       ('Product B', 8, 10),
+       ('Product C', 20, 10);
+
+-- 创建预警记录表
+CREATE TABLE IF NOT EXISTS stock_alerts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    product_id INT NOT NULL,
+    alert_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (product_id) REFERENCES product_stock(id)
+);
+
+-- 创建触发器，在库存数量减少到阈值以下时插入一条预警记录
+DELIMITER //
+
+CREATE TRIGGER after_update_product_stock
+AFTER UPDATE ON product_stock
+FOR EACH ROW
+BEGIN
+    IF NEW.stock_quantity < NEW.threshold THEN
+        INSERT INTO stock_alerts (product_id) VALUES (NEW.id);
+    END IF;
+END//
+
+DELIMITER ;

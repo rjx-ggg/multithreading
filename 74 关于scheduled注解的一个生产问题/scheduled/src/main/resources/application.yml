@@ -1,0 +1,8 @@
+#设置端口
+server:
+  port: 8070
+spring:
+  task:
+    scheduling:
+      pool:
+        size: 10

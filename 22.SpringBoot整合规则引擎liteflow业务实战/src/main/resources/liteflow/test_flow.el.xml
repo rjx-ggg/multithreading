@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow>
+    <chain name="test_flow">
+        THEN(
+           prepareTrade, grantScore, sendMq, WHEN(sendEmail, sendPhone)
+        );
+    </chain>
+</flow>
+
+
+<!--        # 文件编排， then 代表串行执行  when 表示并行执行-->
+<!--        # 串行编排示例-->
+<!--        THEN(a, b, c, d);-->
+<!--        # 并行编排示例-->
+<!--        WHEN(a, b, c);-->
+<!--        # 串行和并行嵌套结合-->
+<!--        THEN( a, WHEN(b, c, d), e);-->
+<!--        # 选择编排示例-->
+<!--        SWITCH(a).to(b, c, d);-->
+<!--        # 条件编排示例-->
+<!--        THEN(IF(x, a),b );-->

@@ -1,0 +1,54 @@
+package com.woniu.demo.service.impl;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.woniu.demo.dao.UserMapper;
+import com.woniu.demo.entity.UserDO;
+import com.woniu.demo.model.request.InsertUserReq;
+import com.woniu.demo.model.request.UpdateUserReq;
+import com.woniu.demo.service.UserService;
+import com.woniu.demo.service.convert.UserConvert;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+@Service
+@Slf4j
+public class UserServiceImpl implements UserService {
+
+
+    @Autowired
+    private UserMapper userRepository;
+
+
+    @Override
+    public ResponseEntity<String> addUser(InsertUserReq addReq) {
+        //构建用户对象
+        UserDO userDO = UserConvert.toDOWhenSave(addReq);
+
+        UserDO userPhone = userRepository.selectOne(new QueryWrapper<UserDO>().eq("user_phone", userDO.getUserPhone()));
+        if (userPhone != null) {
+            return ResponseEntity.ok("用户已存在");
+        }
+        //添加数据库
+        int insert = userRepository.insert(userDO);
+        if (insert == 0) {
+            return ResponseEntity.ok("添加用户失败");
+        }
+        //添加用户状态
+        return ResponseEntity.ok("添加用户成功");
+    }
+
+    /**
+     * 模拟修改用户
+     * @param updateUserReq
+     * @return
+     */
+    @Override
+    public ResponseEntity<String> updateUser(UpdateUserReq updateUserReq) {
+
+        return ResponseEntity.ok("修改用户成功");
+    }
+
+
+}

@@ -1,0 +1,17 @@
+#设置端口
+server:
+  port: 8070
+  servlet:
+    context-path: /phoneToRegion
+#配置redis
+spring:
+  redis:
+    host: 192.168.56.10
+    port: 6379
+    timeout: 6000ms
+    connect-timeout: 3000ms
+    password: 123456
+
+
+phoneToRegion:
+  enabled: true

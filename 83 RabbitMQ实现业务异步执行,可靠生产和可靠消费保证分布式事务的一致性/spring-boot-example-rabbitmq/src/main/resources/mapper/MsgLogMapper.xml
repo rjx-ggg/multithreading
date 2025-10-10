@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.smail.dao.MsgLogMapper" >
+    <resultMap id="BaseResultMap" type="com.example.rabbitmq.entity.MsgLog" >
+        <id column="msg_id" property="msgId" jdbcType="VARCHAR" />
+        <result column="exchange" property="exchange" jdbcType="VARCHAR" />
+        <result column="route_key" property="routeKey" jdbcType="VARCHAR" />
+        <result column="queue_name" property="queueName" jdbcType="VARCHAR" />
+        <result column="msg" property="msg" jdbcType="VARCHAR" />
+        <result column="result" property="result" jdbcType="VARCHAR" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="try_count" property="tryCount" jdbcType="INTEGER" />
+        <result column="next_try_time" property="nextTryTime" jdbcType="TIMESTAMP" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        msg_id, exchange, route_key, queue_name, msg, result, status, try_count, next_try_time, create_time, update_time
+    </sql>
+
+    <insert id="insert" parameterType="com.example.rabbitmq.entity.MsgLog">
+        insert into msg_log(msg_id, exchange, route_key, queue_name, msg, result, status, try_count, next_try_time, create_time, update_time)
+        values (#{msgId}, #{exchange}, #{routeKey}, #{queueName}, #{msg}, #{result}, #{status}, #{tryCount}, #{nextTryTime}, #{createTime}, #{updateTime})
+    </insert>
+
+    <update id="updateStatus">
+        update msg_log set status = #{status}, result = #{result}, update_time = now()
+        where msg_id = #{msgId}
+    </update>
+
+    <update id="updateTryCount" parameterType="com.example.rabbitmq.entity.MsgLog">
+        update msg_log set try_count = try_count + 1, next_try_time = #{nextTryTime}, update_time = now()
+        where msg_id = #{msgId}
+    </update>
+
+    <select id="selectFailMsg" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/>
+        from msg_log
+        where status = 2
+        and next_try_time &lt;= now()
+    </select>
+
+    <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from msg_log
+        where msg_id = #{msgId,jdbcType=VARCHAR}
+    </select>
+</mapper>

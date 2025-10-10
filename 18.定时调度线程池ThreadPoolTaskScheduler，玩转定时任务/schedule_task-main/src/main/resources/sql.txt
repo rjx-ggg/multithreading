@@ -1,0 +1,7 @@
+create table t_schedule_task(
+    id int auto_increment primary key not null comment '主键Id',
+    task_clazz varchar(200) not null comment '定时任务类',
+    task_method varchar(200) not null comment '定时任务执行方法',
+    cron varchar(200) not null comment '定时任务时间',
+    status smallint not null default 0 comment '定时任务状态，0:开启，1:关闭'
+) ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=utf8 comment '定时任务管理表';

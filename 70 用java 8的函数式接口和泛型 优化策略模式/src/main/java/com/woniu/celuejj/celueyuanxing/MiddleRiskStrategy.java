@@ -1,0 +1,9 @@
+package com.woniu.celuejj.celueyuanxing;
+
+
+public class MiddleRiskStrategy implements FunctionStrategy {
+    @Override
+    public void huicun() {
+        System.out.println("在中风险回来了，get out!");
+    }
+}

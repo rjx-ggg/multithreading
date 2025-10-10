@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.1.0.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.1.5.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.1.8.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.2.2.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.2.6.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.3.12.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.3.9.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.4.8/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.6.2/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.6.3/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.7.0/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.7.15/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/2.7.7/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/3.1.7/src/main/resources" charset="UTF-8" />
+    <file url="file://F:/maven-repository/org/springframework/boot/spring-boot-starter-parent/3.2.2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/18.定时调度线程池ThreadPoolTaskScheduler，玩转定时任务/schedule_task-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/19.SpringBoot整合定时调度线程池实现动态定时任务/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/21.SpringBoot整合Quartz实现定时任务动态配置/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/22.SpringBoot整合规则引擎liteflow业务实战/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23 使用Nacos实现动态线程池，用xxlJob监控动态线程池/dynamicThreadPool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/24. 导出下载进度条简单实现/导出下载进度条/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25.动态更改Spring定时任务Cron表达式的优雅方案 实现动态定时任务/动态更改Spring定时任务Cron表达式的优雅方案 实现动态定时任务/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/26.聊一聊CompletionService如何优雅地处理异步任务/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/27.简洁精妙的状态机设计与核心代码实现/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/28 SpringBoot实现超大文件上传的通用方案/file-upload/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/29. xxlJob分布式任务调度通用业务实战 分布式加多线程 批量处理任务/xxljobgeneralpractice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3.多线程异步记录操作日志/demo-operationlog-springboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/32 万能通用的异步实战方案 涉及多线程 mq 数据库的整合/woniu-async-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/33 优雅封装RabbitMQ 实现动态队列、动态生产者，动态消费者绑定/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/34 Spring集成多个MyBatis框架 实现多数据源 并且实现多数据源事务/dynamicdatasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/35 aop与自定义注解整合springjdbc 实现多数据源/dynamic_datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/36 dynamicdatasource多数源组件实现多数据源，动态添加切换数据源，实现多数据源事务/dynamicdatasource3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/38 SpringBoot Starter，自定义全局加解密组件/encrydemo/encry-woniu-spring-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/39 如何从零开始实现一个场景启动器 springboot starter/starterdemo/woniu-starter-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4.模拟压测 高并发压测实战/moniyace/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/40 实战！如何实现多租户数据隔离？/multi_tenant_datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/41 实战! mybatis拦截器实现动态SQL更新/dynamicsql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/42 MybatisPlus实现多租户 通过表字段（租户ID）进行数据逻辑隔离/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/43 数据如何优雅的实现脱敏？实战/sensitivedata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/44 业务项目中如何主动感知mysql是否存活？/springboot-db-check-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/45 如何手写一个代码生成器？生成最基础的CRUD功能/generatecode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/46 tika轻松实现各种文档内容解析和校验/tikademo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/46 tika轻松实现各种文档内容解析和校验/tikademo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/47 实战!SpringBoot整合RabbitMQ和Redis实现一个秒杀系统！/seckill-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/48 实战！从spring源码学到的优化冗余代码的一种方案，消除代码中的if else/demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/49 自定义注解添加自定义转换器 让aop异步记录操作日志变得通用/demo-operationlog-springboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5.java并发查询数据实战 提高接口响应速度/concurrentThreadSelect/concurrentThreadSelect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/51 springboot整合activiti工作流发起流程/Activiti7demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/52 实战！过滤器结合装饰模式，改变请求参数，去除请求参数前后空格/trim-filter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/53 实战！websocket实现在线聊天室功能！/spring-boot-websocket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/54 实战！实现一个动态线程池以及线程池监控告警功能！/dynamic-thread-pool/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/55 实战！SpringBoot实现日志链路追踪/logtrace/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/56 springboot启动时自动初始化数据库/initite/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/58 实战！ThreadLocal在工作中是怎么使用的/threadlocaldemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/60 多功能条件查询接口实战！实现模糊分页排序以及多条件查询/通用条件查询/woniu-web-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/61 多线程工具类通用实现/多线程工具类通用实现/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/63 获取归属地实战!SpringBoot通过手机号获取归属地/phone-to-region-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/63 获取归属地实战!SpringBoot通过手机号获取归属地/phone-to-region-main/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/64 实战!基于csv文件获取手机号归属地/phone-to-region-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/64 实战!基于csv文件获取手机号归属地/phone-to-region-main/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/65 责任链 + 工厂 + 模板方法 + 享元模式结合业务实践/phone-to-region-main/phone-to-region-main/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/65 责任链 + 工厂 + 模板方法 + 享元模式结合业务实践/phone-to-region-main/phone-to-region-main/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/72 springboot实现异步线程数据传递/SpringBootYiBuThreadTransport/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/73 springboot如何实现接口的安全/safespringboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/74 关于scheduled注解的一个生产问题/scheduled/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/74 关于scheduled注解的一个生产问题/scheduled/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/76 常见的五种加密算法/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/78 Redisson结合自定义注解解决重复提交问题/redisnotrepeat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/78 Redisson结合自定义注解解决重复提交问题/redisnotrepeat/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/8.多线程实战 统计业务数据中的异常数据，统计异常的数量并告警/exceptiondata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/80 如何在springboot中实现快速加解密/spring-boot-example-demo-master/spring-boot-woniu-shardingsphere/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/81 api健康安全/api-health/api-health/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/81 api健康安全/api-health/api-health/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/82 巧用责任链模式/zerenlian/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/82 巧用责任链模式/zerenlian/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/83 RabbitMQ实现业务异步执行,可靠生产和可靠消费保证分布式事务的一致性/spring-boot-example-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/84 纵向越权如何实现？手把手带你开发一套用户权限系统/spring-boot-example-menu/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/85 整合 jackson 轻松搞定接口数据脱敏/spring-boot-example-sensitive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/86 实战！如何处理 MQ 消费失败的消息？/spring-boot-example-rabbitmq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/87 如何在 Spring Boot 中快速实现数据的加解密功能/spring-boot-example-demo-master/spring-boot-example-shardingsphere/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/88 实战!用一个注解实现分批处理合并结果！/spring-boot-example-hebing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/89 如何防止接口重复提交？/spring-boot-example-request/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/90 实战JWT搞定跨站点统一登录/spring-boot-example-jwt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/91 SpringBoot实现一个商品库存预警系统/spring-boot-example-alert/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/92 SpringBoot整合Logback，实现敏感信息日志脱敏并且异步高效写入/spring-boot-example-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/93 Redis+Lua整合，实现订单转手功能/spring-boot-example-lua/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/94 SpringBoot使用TraceId实现日志链路追踪/spring-boot-example-lianluzhuizong/src/main/java" charset="UTF-8" />
+  </component>
+</project>

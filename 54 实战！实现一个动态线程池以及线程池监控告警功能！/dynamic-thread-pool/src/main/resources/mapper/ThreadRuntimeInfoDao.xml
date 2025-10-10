@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.woniu.dao.ThreadRuntimeInfoDao">
+
+    <resultMap type="com.woniu.entity.ThreadRuntimeInfo" id="ThreadRuntimeInfoMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="itemId" column="item_id" jdbcType="VARCHAR"/>
+        <result property="threadPoolName" column="thread_pool_name" jdbcType="VARCHAR"/>
+        <result property="corePoolSize" column="core_pool_size" jdbcType="INTEGER"/>
+        <result property="maximumPoolSize" column="maximum_pool_size" jdbcType="INTEGER"/>
+        <result property="queueCapacity" column="queue_capacity" jdbcType="INTEGER"/>
+        <result property="keepaliveTime" column="keepalive_time" jdbcType="INTEGER"/>
+        <result property="poolSize" column="pool_size" jdbcType="INTEGER"/>
+        <result property="activeSize" column="active_size" jdbcType="INTEGER"/>
+        <result property="queueSize" column="queue_size" jdbcType="INTEGER"/>
+        <result property="queueRemainingCapacity" column="queue_remaining_capacity" jdbcType="INTEGER"/>
+        <result property="largestPoolSize" column="largest_pool_size" jdbcType="INTEGER"/>
+        <result property="taskCount" column="task_count" jdbcType="INTEGER"/>
+        <result property="completedTaskCount" column="completed_task_count" jdbcType="INTEGER"/>
+        <result property="currentLoad" column="current_load" jdbcType="NUMERIC"/>
+        <result property="maximumLoad" column="maximum_load" jdbcType="NUMERIC"/>
+        <result property="queueType" column="queue_type" jdbcType="VARCHAR"/>
+        <result property="threadFactoryType" column="thread_factory_type" jdbcType="VARCHAR"/>
+        <result property="rejectedHandlerType" column="rejected_handler_type" jdbcType="VARCHAR"/>
+        <result property="timestamp" column="timestamp" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="ThreadRuntimeInfoMap">
+        select id,
+               item_id,
+               thread_pool_name,
+               core_pool_size,
+               maximum_pool_size,
+               queue_capacity,
+               keepalive_time,
+               pool_size,
+               active_size,
+               queue_size,
+               queue_remaining_capacity,
+               largest_pool_size,
+               task_count,
+               completed_task_count,
+               current_load,
+               maximum_load,
+               queue_type,
+               thread_factory_type,
+               rejected_handler_type, timestamp, create_time
+        from t_thread_runtime_info
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="ThreadRuntimeInfoMap">
+        select
+        id, item_id, thread_pool_name, core_pool_size, maximum_pool_size, queue_capacity, keepalive_time, pool_size,
+        active_size, queue_size, queue_remaining_capacity, largest_pool_size, task_count, completed_task_count,
+        current_load, maximum_load, queue_type, thread_factory_type, rejected_handler_type, timestamp, create_time
+        from t_thread_runtime_info
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="itemId != null and itemId != ''">
+                and item_id = #{itemId}
+            </if>
+            <if test="threadPoolName != null and threadPoolName != ''">
+                and thread_pool_name = #{threadPoolName}
+            </if>
+            <if test="corePoolSize != null">
+                and core_pool_size = #{corePoolSize}
+            </if>
+            <if test="maximumPoolSize != null">
+                and maximum_pool_size = #{maximumPoolSize}
+            </if>
+            <if test="queueCapacity != null">
+                and queue_capacity = #{queueCapacity}
+            </if>
+            <if test="keepaliveTime != null">
+                and keepalive_time = #{keepaliveTime}
+            </if>
+            <if test="poolSize != null">
+                and pool_size = #{poolSize}
+            </if>
+            <if test="activeSize != null">
+                and active_size = #{activeSize}
+            </if>
+            <if test="queueSize != null">
+                and queue_size = #{queueSize}
+            </if>
+            <if test="queueRemainingCapacity != null">
+                and queue_remaining_capacity = #{queueRemainingCapacity}
+            </if>
+            <if test="largestPoolSize != null">
+                and largest_pool_size = #{largestPoolSize}
+            </if>
+            <if test="taskCount != null">
+                and task_count = #{taskCount}
+            </if>
+            <if test="completedTaskCount != null">
+                and completed_task_count = #{completedTaskCount}
+            </if>
+            <if test="currentLoad != null">
+                and current_load = #{currentLoad}
+            </if>
+            <if test="maximumLoad != null">
+                and maximum_load = #{maximumLoad}
+            </if>
+            <if test="queueType != null and queueType != ''">
+                and queue_type = #{queueType}
+            </if>
+            <if test="threadFactoryType != null and threadFactoryType != ''">
+                and thread_factory_type = #{threadFactoryType}
+            </if>
+            <if test="rejectedHandlerType != null and rejectedHandlerType != ''">
+                and rejected_handler_type = #{rejectedHandlerType}
+            </if>
+            <if test="timestamp != null">
+                and timestamp = #{timestamp}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+        </where>
+        limit #{pageable.offset}, #{pageable.pageSize}
+    </select>
+
+    <!--统计总行数-->
+    <select id="count" resultType="java.lang.Long">
+        select count(1)
+        from t_thread_runtime_info
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="itemId != null and itemId != ''">
+                and item_id = #{itemId}
+            </if>
+            <if test="threadPoolName != null and threadPoolName != ''">
+                and thread_pool_name = #{threadPoolName}
+            </if>
+            <if test="corePoolSize != null">
+                and core_pool_size = #{corePoolSize}
+            </if>
+            <if test="maximumPoolSize != null">
+                and maximum_pool_size = #{maximumPoolSize}
+            </if>
+            <if test="queueCapacity != null">
+                and queue_capacity = #{queueCapacity}
+            </if>
+            <if test="keepaliveTime != null">
+                and keepalive_time = #{keepaliveTime}
+            </if>
+            <if test="poolSize != null">
+                and pool_size = #{poolSize}
+            </if>
+            <if test="activeSize != null">
+                and active_size = #{activeSize}
+            </if>
+            <if test="queueSize != null">
+                and queue_size = #{queueSize}
+            </if>
+            <if test="queueRemainingCapacity != null">
+                and queue_remaining_capacity = #{queueRemainingCapacity}
+            </if>
+            <if test="largestPoolSize != null">
+                and largest_pool_size = #{largestPoolSize}
+            </if>
+            <if test="taskCount != null">
+                and task_count = #{taskCount}
+            </if>
+            <if test="completedTaskCount != null">
+                and completed_task_count = #{completedTaskCount}
+            </if>
+            <if test="currentLoad != null">
+                and current_load = #{currentLoad}
+            </if>
+            <if test="maximumLoad != null">
+                and maximum_load = #{maximumLoad}
+            </if>
+            <if test="queueType != null and queueType != ''">
+                and queue_type = #{queueType}
+            </if>
+            <if test="threadFactoryType != null and threadFactoryType != ''">
+                and thread_factory_type = #{threadFactoryType}
+            </if>
+            <if test="rejectedHandlerType != null and rejectedHandlerType != ''">
+                and rejected_handler_type = #{rejectedHandlerType}
+            </if>
+            <if test="timestamp != null">
+                and timestamp = #{timestamp}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into t_thread_runtime_info(item_id, thread_pool_name, core_pool_size, maximum_pool_size, queue_capacity,
+                                          keepalive_time, pool_size, active_size, queue_size, queue_remaining_capacity,
+                                          largest_pool_size, task_count, completed_task_count, current_load,
+                                          maximum_load, queue_type, thread_factory_type, rejected_handler_type,
+                                          timestamp, create_time)
+        values (#{itemId}, #{threadPoolName}, #{corePoolSize}, #{maximumPoolSize}, #{queueCapacity}, #{keepaliveTime},
+                #{poolSize}, #{activeSize}, #{queueSize}, #{queueRemainingCapacity}, #{largestPoolSize}, #{taskCount},
+                #{completedTaskCount}, #{currentLoad}, #{maximumLoad}, #{queueType}, #{threadFactoryType},
+                #{rejectedHandlerType}, #{timestamp}, #{createTime})
+    </insert>
+
+    <insert id="insertBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into t_thread_runtime_info(item_id, thread_pool_name, core_pool_size, maximum_pool_size, queue_capacity,
+        keepalive_time, pool_size, active_size, queue_size, queue_remaining_capacity, largest_pool_size, task_count,
+        completed_task_count, current_load, maximum_load, queue_type, thread_factory_type, rejected_handler_type,
+        timestamp, create_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.itemId}, #{entity.threadPoolName}, #{entity.corePoolSize}, #{entity.maximumPoolSize},
+            #{entity.queueCapacity}, #{entity.keepaliveTime}, #{entity.poolSize}, #{entity.activeSize},
+            #{entity.queueSize}, #{entity.queueRemainingCapacity}, #{entity.largestPoolSize}, #{entity.taskCount},
+            #{entity.completedTaskCount}, #{entity.currentLoad}, #{entity.maximumLoad}, #{entity.queueType},
+            #{entity.threadFactoryType}, #{entity.rejectedHandlerType}, #{entity.timestamp}, #{entity.createTime})
+        </foreach>
+    </insert>
+
+    <insert id="insertOrUpdateBatch" keyProperty="id" useGeneratedKeys="true">
+        insert into t_thread_runtime_info(item_id, thread_pool_name, core_pool_size, maximum_pool_size, queue_capacity,
+        keepalive_time, pool_size, active_size, queue_size, queue_remaining_capacity, largest_pool_size, task_count,
+        completed_task_count, current_load, maximum_load, queue_type, thread_factory_type, rejected_handler_type,
+        timestamp, create_time)
+        values
+        <foreach collection="entities" item="entity" separator=",">
+            (#{entity.itemId}, #{entity.threadPoolName}, #{entity.corePoolSize}, #{entity.maximumPoolSize},
+            #{entity.queueCapacity}, #{entity.keepaliveTime}, #{entity.poolSize}, #{entity.activeSize},
+            #{entity.queueSize}, #{entity.queueRemainingCapacity}, #{entity.largestPoolSize}, #{entity.taskCount},
+            #{entity.completedTaskCount}, #{entity.currentLoad}, #{entity.maximumLoad}, #{entity.queueType},
+            #{entity.threadFactoryType}, #{entity.rejectedHandlerType}, #{entity.timestamp}, #{entity.createTime})
+        </foreach>
+        on duplicate key update
+        item_id = values(item_id),
+        thread_pool_name = values(thread_pool_name),
+        core_pool_size = values(core_pool_size),
+        maximum_pool_size = values(maximum_pool_size),
+        queue_capacity = values(queue_capacity),
+        keepalive_time = values(keepalive_time),
+        pool_size = values(pool_size),
+        active_size = values(active_size),
+        queue_size = values(queue_size),
+        queue_remaining_capacity = values(queue_remaining_capacity),
+        largest_pool_size = values(largest_pool_size),
+        task_count = values(task_count),
+        completed_task_count = values(completed_task_count),
+        current_load = values(current_load),
+        maximum_load = values(maximum_load),
+        queue_type = values(queue_type),
+        thread_factory_type = values(thread_factory_type),
+        rejected_handler_type = values(rejected_handler_type),
+        timestamp = values(timestamp),
+        create_time = values(create_time)
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update t_thread_runtime_info
+        <set>
+            <if test="itemId != null and itemId != ''">
+                item_id = #{itemId},
+            </if>
+            <if test="threadPoolName != null and threadPoolName != ''">
+                thread_pool_name = #{threadPoolName},
+            </if>
+            <if test="corePoolSize != null">
+                core_pool_size = #{corePoolSize},
+            </if>
+            <if test="maximumPoolSize != null">
+                maximum_pool_size = #{maximumPoolSize},
+            </if>
+            <if test="queueCapacity != null">
+                queue_capacity = #{queueCapacity},
+            </if>
+            <if test="keepaliveTime != null">
+                keepalive_time = #{keepaliveTime},
+            </if>
+            <if test="poolSize != null">
+                pool_size = #{poolSize},
+            </if>
+            <if test="activeSize != null">
+                active_size = #{activeSize},
+            </if>
+            <if test="queueSize != null">
+                queue_size = #{queueSize},
+            </if>
+            <if test="queueRemainingCapacity != null">
+                queue_remaining_capacity = #{queueRemainingCapacity},
+            </if>
+            <if test="largestPoolSize != null">
+                largest_pool_size = #{largestPoolSize},
+            </if>
+            <if test="taskCount != null">
+                task_count = #{taskCount},
+            </if>
+            <if test="completedTaskCount != null">
+                completed_task_count = #{completedTaskCount},
+            </if>
+            <if test="currentLoad != null">
+                current_load = #{currentLoad},
+            </if>
+            <if test="maximumLoad != null">
+                maximum_load = #{maximumLoad},
+            </if>
+            <if test="queueType != null and queueType != ''">
+                queue_type = #{queueType},
+            </if>
+            <if test="threadFactoryType != null and threadFactoryType != ''">
+                thread_factory_type = #{threadFactoryType},
+            </if>
+            <if test="rejectedHandlerType != null and rejectedHandlerType != ''">
+                rejected_handler_type = #{rejectedHandlerType},
+            </if>
+            <if test="timestamp != null">
+                timestamp = #{timestamp},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from t_thread_runtime_info
+        where id = #{id}
+    </delete>
+
+</mapper>

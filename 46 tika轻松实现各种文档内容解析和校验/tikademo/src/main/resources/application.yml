@@ -1,0 +1,15 @@
+spring:
+  servlet:
+    multipart:
+      max-request-size: 30MB
+      max-file-size: 1024MB
+  datasource:
+    username: root
+    password: 123456
+    #`rewriteBatchedStatements=true` 是 MySQL 数据库连接配置中的一个参数，用于控制是否启用批量语句重写。
+    #在默认情况下，MySQL 的批量语句处理方式是逐条执行 SQL 语句。然而，这可能会导致性能问题，特别是在处理大量数据时。因此，MySQL 提供了一种可以提高性能的批量处理方式，即批量语句重写。
+    #当 `rewriteBatchedStatements=true` 时，MySQL 会自动将多个 SQL 语句合并成一条语句，以提高执行效率。这可以显著提高数据库操作的性能，特别是在处理大量数据时。
+    url: jdbc:mysql://127.0.0.1:3306/employees?rewriteBatchedStatements=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+  main:
+    allow-circular-references: true
+
