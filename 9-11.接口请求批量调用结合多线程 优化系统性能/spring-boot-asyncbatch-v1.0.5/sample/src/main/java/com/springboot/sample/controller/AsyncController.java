@@ -41,8 +41,10 @@ public class AsyncController {
      * */
     @RequestMapping("/merge")
     public User merge(Long userId) {
+        // 使用 future.get() 阻塞获取
 //        return userBatchService.queryUser(userId);
-       return userWrapBatchQueueService.queryUser(userId);
+        // 优化使用队列，添加超时时间处理，避免阻塞，超高并发调用接口导致资源耗尽
+        return userWrapBatchQueueService.queryUser(userId);
     }
 
 }
