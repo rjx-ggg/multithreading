@@ -7,6 +7,7 @@ import com.woniu.scheduleTask.mapper.ScheduleTaskMapper;
 import com.woniu.scheduleTask.task.CronTaskRegistrar;
 import com.woniu.scheduleTask.task.SchedulingRunnable;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,6 +30,7 @@ public class TestController {
      * @return
      */
     @PostMapping("add")
+    @Transactional
     public boolean add(@RequestBody ScheduleSetting sysJob) {
         sysJob.setCreateTime(new Date());
         sysJob.setUpdateTime(new Date());
@@ -52,6 +54,8 @@ public class TestController {
      * @return
      */
     @PostMapping("update")
+    @Transactional
+
     public boolean update(@RequestBody ScheduleSetting sysJob) {
         sysJob.setCreateTime(new Date());
         sysJob.setUpdateTime(new Date());
@@ -84,6 +88,7 @@ public class TestController {
      * @return
      */
     @PostMapping("del/{jobId}")
+    @Transactional
     public boolean del(@PathVariable("jobId") Integer jobId) {
         // 先查询要删除的任务信息
         ScheduleSetting existedSysJob = scheduleTaskMapper.selectOne(new QueryWrapper<ScheduleSetting>().eq("job_id", jobId));

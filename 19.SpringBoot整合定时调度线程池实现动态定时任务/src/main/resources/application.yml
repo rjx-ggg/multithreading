@@ -4,10 +4,10 @@ server:
     context-path: /task
 spring:
   datasource:
-    url: jdbc:p6spy:mysql://127.0.0.1:3306/biz?characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:p6spy:mysql://127.0.0.1:13307/biz?characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     username: root
-    password: 123456
+    password: rjx666nxx
     hikari:
       auto-commit: true
       connection-timeout: 20000
