@@ -72,6 +72,7 @@
         <module name="millions-demo (2)" />
         <module name="threadPoolExecutor" />
         <module name="woniu-web (1)" />
+        <module name="sample" />
         <module name="celuemoshijingjian" />
         <module name="woniu-springboot-interface-demo (3)" />
         <module name="threadconnectiondemo (7)" />

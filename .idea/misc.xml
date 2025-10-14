@@ -90,6 +90,7 @@
         <option value="$PROJECT_DIR$/92 SpringBoot整合Logback，实现敏感信息日志脱敏并且异步高效写入/spring-boot-example-log/pom.xml" />
         <option value="$PROJECT_DIR$/48 实战！从spring源码学到的优化冗余代码的一种方案，消除代码中的if else/demo/pom.xml" />
         <option value="$PROJECT_DIR$/36 dynamicdatasource多数源组件实现多数据源，动态添加切换数据源，实现多数据源事务/dynamicdatasource3/pom.xml" />
+        <option value="$PROJECT_DIR$/12-17.手写线程池/手写线程池/sample/pom.xml" />
       </list>
     </option>
   </component>

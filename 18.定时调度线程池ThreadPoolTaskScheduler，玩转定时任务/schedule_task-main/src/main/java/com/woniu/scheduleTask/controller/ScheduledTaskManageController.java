@@ -21,16 +21,32 @@ public class ScheduledTaskManageController {
     @Autowired
     private ScheduledTaskManageService manageService;
 
+
+    /**
+     * 添加定时任务
+     * @param task
+     * @return
+     */
     @PostMapping("/addTask.do")
     public ResultUtil<?> addTask(@RequestBody @Validated ScheduleTask task){
         return manageService.addTask(task);
     }
 
+    /**
+     * 编辑定时任务
+     * @param task
+     * @return
+     */
     @PutMapping("/editTask.do")
     public ResultUtil<?> editTask(@RequestBody @Validated(value = ScheduleTask.Update.class) ScheduleTask task){
         return manageService.editTask(task);
     }
 
+    /**
+     * 删除定时任务
+     * @param id
+     * @return
+     */
     @GetMapping("/deleteTask.do/{id}")
     public ResultUtil<?> deleteTask(@PathVariable("id") Integer id){
         return manageService.deleteTask(id);
