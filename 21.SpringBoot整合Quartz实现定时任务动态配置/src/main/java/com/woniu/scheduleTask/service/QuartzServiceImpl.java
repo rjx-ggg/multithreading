@@ -78,8 +78,10 @@ public class QuartzServiceImpl implements QuartzService {
         JobKey jobKey = JobKey.jobKey(jobName, jobGroup);
         String triggerId = jobKey.getGroup() + jobKey.getName();
 
+        // 检查该定时任务是否存在
         checkJobExist(jobKey);
 
+        // 重新设置cron表达式和触发器
         TriggerKey triggerKey = TriggerKey.triggerKey(triggerId);
         CronScheduleBuilder scheduleBuilder = CronScheduleBuilder.cronSchedule(cron);
         TriggerBuilder<?> triggerBuilder = TriggerBuilder.newTrigger()
@@ -87,6 +89,7 @@ public class QuartzServiceImpl implements QuartzService {
                 .withIdentity(triggerId);
 
         Trigger trigger = triggerBuilder.build();
+        // 更新定时任务-触发器
         scheduler.rescheduleJob(triggerKey, trigger);
     }
 
@@ -152,15 +155,19 @@ public class QuartzServiceImpl implements QuartzService {
     }
 
     public QuartzJobDetailDto getJobDtoByJobKey(JobKey jobKey) throws SchedulerException {
+        // 获取任务详情
         JobDetail jobDetail = scheduler.getJobDetail(jobKey);
+        // 获取触发器信息
         List<Trigger> triggerList = (List<Trigger>) scheduler.getTriggersOfJob(jobKey);
 
+        // 设置任务信息
         QuartzJobDetailDto jobDto = new QuartzJobDetailDto();
         jobDto.setJobClazz(jobDetail.getJobClass().toString());
         jobDto.setJobName(jobKey.getName());
         jobDto.setJobGroup(jobKey.getGroup());
         jobDto.setJobDataMap(jobDetail.getJobDataMap());
 
+        // 设置触发器信息
         List<QuartzTriggerDetailDto> triggerDtoList = new ArrayList<>();
         for (Trigger trigger : triggerList) {
             QuartzTriggerDetailDto triggerDto = new QuartzTriggerDetailDto();

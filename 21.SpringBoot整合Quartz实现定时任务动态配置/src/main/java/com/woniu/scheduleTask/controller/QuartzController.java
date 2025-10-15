@@ -18,11 +18,22 @@ public class QuartzController {
     @Autowired
     private QuartzServiceImpl quartzService;
 
+    /**
+     * 添加任务
+     * @param param
+     * @throws SchedulerException
+     */
     @PostMapping("/quartz/addJob")
     public void addJob(@RequestBody QuartzCreateParam param) throws SchedulerException {
         quartzService.addJob(param);
     }
 
+
+    /**
+     * 更新任务
+     * @param param
+     * @throws SchedulerException
+     */
     @PostMapping("/quartz/updateJob")
     public void updateJob(@RequestBody QuartzUpdateParam param) throws SchedulerException {
         quartzService.updateJob(param);
@@ -33,21 +44,42 @@ public class QuartzController {
         quartzService.pauseJob(param);
     }
 
+    /**
+     * 重启定时任务
+     * @param param
+     * @throws SchedulerException
+     */
     @PostMapping("/quartz/resumeJob")
     public void resumeJob(@RequestBody QuartzDetailParam param) throws SchedulerException {
         quartzService.resumeJob(param);
     }
 
+    /**
+     * 删除任务
+     * @param param
+     * @throws SchedulerException
+     */
     @PostMapping("/quartz/deleteJob")
     public void deleteJob(@RequestBody QuartzDetailParam param) throws SchedulerException {
         quartzService.deleteJob(param);
     }
 
+    /**
+     * 查询任务列表
+     * @return
+     * @throws SchedulerException
+     */
     @PostMapping("/quartz/jobList")
     public List<QuartzJobDetailDto> jobList() throws SchedulerException {
         return quartzService.jobList();
     }
 
+    /**
+     * 查询任务详情
+     * @param param
+     * @return
+     * @throws SchedulerException
+     */
     @PostMapping("/quartz/jobDetail")
     public QuartzJobDetailDto jobDetail(@RequestBody QuartzDetailParam param) throws SchedulerException {
         return quartzService.jobDetail(param);
