@@ -25,6 +25,7 @@ public class FlowExecutorService {
 
     /**
      * SpringBoot 整合规则引擎 liteflow 业务实战
+     * @Async：异步执行
      *
      * 订单完成后，进行积分的发放，mq消息发送，同时并行发送短信和邮件。
      * @param flowDto
