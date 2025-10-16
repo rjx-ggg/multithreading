@@ -32,7 +32,7 @@ public class FlowExecutorService {
      */
     @Async
     public void handleApp(AppFlowDto flowDto){
-        // 使用的规则文件，传递参数，上下文对象
+        // 使用的规则文件（对应：resource下的test_flow.el.xml文件），传递参数，上下文对象
         LiteflowResponse response = flowExecutor.execute2Resp("test_flow", flowDto, AppFlowContext.class);
 
         // 获取流程执行后的结果
