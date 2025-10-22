@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Primary;
 import java.util.Properties;
 
 /**
- * nacos配置
+ * nacos配置.txt
  */
 @Configuration
 public class NacosConfig {

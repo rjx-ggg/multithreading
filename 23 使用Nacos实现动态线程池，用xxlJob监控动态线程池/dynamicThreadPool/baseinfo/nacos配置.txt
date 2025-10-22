@@ -1,0 +1,7 @@
+
+dynamic-thread-pool-dev.properties
+DEFAULT_GROUP
+配置信息:
+dynamic.threadpool.corePoolSize=9
+dynamic.threadpool.maximumPoolSize=50
+dynamic.threadpool.queueCapacity=200

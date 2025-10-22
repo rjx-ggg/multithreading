@@ -2,3 +2,24 @@ spring:
   profiles:
     active: dev
 
+#dynamic:
+#  threadpool:
+#    corePoolSize: 10
+#    maximumPoolSize: 20
+#    queueCapacity: 1000
+
+xxl:
+  job:
+    admin:
+      accessToken: default_token
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+      timeout: 3
+    executor:
+      address:
+      appname: xxl-job-executor-sample111
+      ip:
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: 30
+      port: 9999
+
+
