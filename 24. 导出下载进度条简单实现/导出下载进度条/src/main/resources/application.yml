@@ -6,6 +6,12 @@ spring:
 
   profiles:
     active: dev
-  redis:
-    host: 192.168.56.10
-    password: 123456
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      password: rjx666nxx
+      timeout: 5000
+#  redis:
+#    host: 127.0.0.1
+#    password: rjx666nxx
