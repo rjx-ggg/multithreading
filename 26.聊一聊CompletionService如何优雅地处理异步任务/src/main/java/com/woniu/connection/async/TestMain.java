@@ -4,6 +4,12 @@ import java.util.concurrent.*;
 
 public class TestMain {
 
+    /**
+     * 使用：ExecutorCompletionService优化避免，避免阻塞等待
+     * @param args
+     * @throws InterruptedException
+     * @throws ExecutionException
+     */
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         ExecutorService executorService = Executors.newCachedThreadPool();
         ExecutorCompletionService<String> completionService =

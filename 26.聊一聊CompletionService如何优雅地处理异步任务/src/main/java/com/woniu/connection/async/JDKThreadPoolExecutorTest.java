@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 聊一聊CompletionService，如何优雅地处理异步任务？
+ * 阻塞等待
  */
 public class JDKThreadPoolExecutorTest {
 //    public static void main(String[] args) throws Exception {

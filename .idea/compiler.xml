@@ -113,11 +113,11 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ExportExcelData (1)" options="-parameters" />
-      <module name="ExportExcelData (2)" options="-parameters" />
+      <module name="ExportExcelData (2)" options="" />
       <module name="SpringBoot2-Activiti7" options="-parameters" />
       <module name="demo (1) (com.woniu)" options="-parameters" />
       <module name="demo (4) (com.example)" options="-parameters" />
-      <module name="demo (5) (com.example)" options="-parameters" />
+      <module name="demo (5) (com.example)" options="" />
       <module name="dynamic-thread-pool" options="-parameters" />
       <module name="dynamic_datasource" options="-parameters" />
       <module name="dynamic_datasource_framework" options="-parameters" />
@@ -133,21 +133,21 @@
       <module name="schedule_task (3)" options="-parameters" />
       <module name="schedule_task (4)" options="-parameters" />
       <module name="seckill" options="-parameters" />
-      <module name="spring-boot-example-jwt (1)" options="-parameters" />
-      <module name="spring-boot-example-jwt (2)" options="-parameters" />
-      <module name="spring-boot-example-jwt (3)" options="-parameters" />
-      <module name="spring-boot-example-jwt (4)" options="-parameters" />
-      <module name="spring-boot-example-jwt (5)" options="-parameters" />
-      <module name="spring-boot-example-jwt (6)" options="-parameters" />
-      <module name="spring-boot-example-jwt (7)" options="-parameters" />
-      <module name="spring-boot-example-menu" options="-parameters" />
+      <module name="spring-boot-example-jwt (1)" options="" />
+      <module name="spring-boot-example-jwt (2)" options="" />
+      <module name="spring-boot-example-jwt (3)" options="" />
+      <module name="spring-boot-example-jwt (4)" options="" />
+      <module name="spring-boot-example-jwt (5)" options="" />
+      <module name="spring-boot-example-jwt (6)" options="" />
+      <module name="spring-boot-example-jwt (7)" options="" />
+      <module name="spring-boot-example-menu" options="" />
       <module name="spring-boot-example-rabbitmq" options="-parameters" />
-      <module name="spring-boot-example-rabbitmq (1)" options="-parameters" />
-      <module name="spring-boot-example-rabbitmq (2)" options="-parameters" />
-      <module name="spring-boot-example-sensitive" options="-parameters" />
+      <module name="spring-boot-example-rabbitmq (1)" options="" />
+      <module name="spring-boot-example-rabbitmq (2)" options="" />
+      <module name="spring-boot-example-sensitive" options="" />
       <module name="spring-boot-example-shardingsphere" options="-parameters" />
-      <module name="spring-boot-example-shardingsphere (1)" options="-parameters" />
-      <module name="spring-boot-example-shardingsphere (2)" options="-parameters" />
+      <module name="spring-boot-example-shardingsphere (1)" options="" />
+      <module name="spring-boot-example-shardingsphere (2)" options="" />
       <module name="spring-boot-websocket" options="-parameters" />
       <module name="springboot-db-check-demo" options="-parameters" />
       <module name="sql-init-demo" options="-parameters" />
@@ -165,11 +165,11 @@
       <module name="woniu-springboot-interface-demo (2)" options="-parameters" />
       <module name="woniu-springboot-interface-demo (3)" options="-parameters" />
       <module name="woniu-springboot-interface-demo (4)" options="-parameters" />
-      <module name="woniu-springboot-interface-demo (5)" options="-parameters" />
+      <module name="woniu-springboot-interface-demo (5)" options="" />
       <module name="woniu-starter-test" options="-parameters" />
       <module name="woniu-web (1)" options="-parameters" />
-      <module name="woniu-web (2)" options="-parameters" />
-      <module name="woniu-web (3)" options="-parameters" />
+      <module name="woniu-web (2)" options="" />
+      <module name="woniu-web (3)" options="" />
       <module name="woniuaysnc" options="-parameters" />
     </option>
   </component>
